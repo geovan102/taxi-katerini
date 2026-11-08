@@ -1,0 +1,266 @@
+:root {
+  --yellow: #FFC20E;
+  --card: #141414;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.accent {
+  color: var(--yellow);
+}
+
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-taxi {
+  color: var(--yellow);
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.brand-city {
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.header-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid var(--yellow);
+  padding-left: 12px;
+}
+
+.header-text strong {
+  font-size: 1rem;
+}
+
+.header-text span {
+  color: var(--yellow);
+  font-size: 0.65rem;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 4px;
+}
+
+.lang-button {
+  background: none;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.lang-button.active {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  color: black;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  aspect-ratio: 4 / 3.6;
+  overflow: hidden;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url("../images/hero-bg.webp") center / cover no-repeat;
+}
+
+.hero-text {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 58%;
+  z-index: 3;
+}
+
+.hero-text h1 {
+  font-size: 1.9rem;
+  margin: 0 0 8px;
+}
+
+.hero-text p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.hero-driver {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 97%;
+  width: auto;
+  max-width: none;
+  z-index: 1;
+}
+
+.hero-taxi {
+  position: absolute;
+  left: 3%;
+  bottom: 0%;
+  width: 65%;
+  z-index: 2;
+}
+
+.hero-call {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  z-index: 3;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 0 16px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0 16px;
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: var(--yellow);
+}
+
+/* ---------- Service cards ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.card {
+  background-color: var(--card);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.card .icon {
+  font-size: 1.8rem;
+}
+
+.card h3 {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* ---------- About ---------- */
+.about-text p {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+}
+
+/* ---------- Contact bar ---------- */
+.contact-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 2px solid var(--yellow);
+}
+
+.phone-number {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.chat-link {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.viber {
+  background-color: #7360F2;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.tagline {
+  margin: 0 0 8px;
+  font-style: italic;
+  color: var(--yellow);
+}
+
+.copyright {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #999;
+}
