@@ -4,8 +4,6 @@ A mobile-friendly website for my taxi service in Katerini, Greece, available in 
 
 🔗 **Live site:** https://geovan102.github.io/taxi-katerini/
 
-![Taxi Katerini homepage on mobile](docs/screenshot.png)
-
 ## 📖 About
 
 I am a taxi driver in Katerini. I built this website to present my services to Greek and international customers.
