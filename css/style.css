@@ -108,20 +108,20 @@ img {
   position: absolute;
   top: 16px;
   left: 16px;
-  width: 50%;
-  max-width: 210px;
+  width: 52%;
+  max-width: 240px;
   z-index: 3;
 }
 
 .hero-text h1 {
-  font-size: 1.35rem;
-  margin: 0 0 6px;
-  line-height: 1.2;
+  font-size: 1.65rem;
+  margin: 0 0 8px;
+  line-height: 1.15;
 }
 
 .hero-text p {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #ddd;
 }
 
@@ -144,18 +144,19 @@ img {
 
 .hero-call {
   position: absolute;
-  right: 16px;
-  bottom: 16px;
+  right: 24px;
+  bottom: 24px;
   z-index: 3;
-  width: 46px;
-  height: 46px;
+  width: 54px;
+  height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background-color: var(--yellow);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* ---------- Sections ---------- */
