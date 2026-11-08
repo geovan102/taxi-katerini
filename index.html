@@ -3,21 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Γιώργος Βανάσας </title>
+  <title>Ταξί Κατερίνη | Γιώργος Βανάσας</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    header
-  </header>
-  <main>
-    <section>
-      <h1>
-        Το ταξίδι σου, με ασφάλεια και συνέπεια.
-      </h1>
-    </section>
-  </main>
-  <footer>
-    footer
-  </footer>
+  <div class="page">
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-taxi">TAXI</span>
+        <span class="brand-city" data-i18n="brandCity">ΚΑΤΕΡΙΝΗ</span>
+      </div>
+      <div class="header-text">
+        <strong data-i18n="brandName">Γιώργος Βανάσας</strong>
+        <span data-i18n="brandTagline">Συνεπής • Ασφαλής • Επαγγελματίας</span>
+      </div>
+      <div class="lang-switch">
+        <button class="lang-button active" type="button" data-lang="el">EL</button>
+        <button class="lang-button" type="button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <h1 data-i18n="heroTitle">Το ταξίδι σου, με <span class="accent">ασφάλεια</span> και <span class="accent">συνέπεια.</span></h1>
+          <p data-i18n="heroSubtitle">Προσωπικές υπηρεσίες ταξί στην Κατερίνη και σε όλη την Ελλάδα.</p>
+        </div>
+
+        <img class="hero-driver" src="images/driver.webp" alt="Ο οδηγός του ταξί" data-i18n-alt="altDriver">
+        <img class="hero-taxi" src="images/taxi-hero.webp" alt="Κίτρινο ταξί" data-i18n-alt="altTaxi">
+
+        <a class="hero-call" href="tel:+306985059892" aria-label="Κάλεσέ με">📞</a>
+      </section>
+
+      <section class="section" id="services">
+        <h2 class="section-title" data-i18n="servicesTitle">Οι Υπηρεσίες μου</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="icon">🚗</div>
+            <h3 data-i18n="service1Title">Μετακινήσεις στην Κατερίνη</h3>
+            <p data-i18n="service1Text">Κάθε διαδρομή με ασφάλεια.</p>
+          </article>
+          <article class="card">
+            <div class="icon">✈️</div>
+            <h3 data-i18n="service2Title">Μεταφορές Αεροδρομίου</h3>
+            <p data-i18n="service2Text">Προς και από το αεροδρόμιο Μακεδονία (SKG)</p>
+          </article>
+          <article class="card">
+            <div class="icon">🛣️</div>
+            <h3 data-i18n="service3Title">Διαδρομές σε άλλες πόλεις</h3>
+            <p data-i18n="service3Text">Σε όλη την Ελλάδα.</p>
+          </article>
+          <article class="card">
+            <div class="icon">📷</div>
+            <h3 data-i18n="service4Title">Τουριστικές Μεταφορές</h3>
+            <p data-i18n="service4Text">Εξερευνήστε τα αξιοθέατά μας.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <h2 class="section-title" data-i18n="aboutTitle">Γνωρίστε τον οδηγό</h2>
+        <div class="about-text">
+          <p data-i18n="aboutText1">Είμαι ο <span class="accent">Γιώργος Βανάσας</span>, επαγγελματίας οδηγός ταξί στην Κατερίνη και μέλος του συνεταιρισμού Ραδιοταξί Κατερίνης.</p>
+          <p data-i18n="aboutText2">Στόχος μου είναι να σας προσφέρω ασφαλείς, άνετες και φιλικές μετακινήσεις στον προορισμό που επιθυμείτε.</p>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="contact-bar">
+          <a class="phone-number" href="tel:+306985059892">📞 698 505 9892</a>
+          <a class="chat-link whatsapp" href="https://wa.me/306985059892">WhatsApp</a>
+          <a class="chat-link viber" href="viber://chat?number=%2B306985059892">Viber</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p class="tagline" data-i18n="footerTagline">Κατερίνη... με ασφάλεια στον προορισμό σας!</p>
+      <p class="copyright" data-i18n="copyright">© 2026 Γεώργιος Βανάσας. Με επιφύλαξη παντός δικαιώματος.</p>
+    </footer>
+
+  </div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
