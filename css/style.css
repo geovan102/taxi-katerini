@@ -129,16 +129,16 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 90%;
+  height: 75%;
   width: auto;
   z-index: 1;
 }
 
 .hero-taxi {
   position: absolute;
-  left: 2%;
+  left: 0%;
   bottom: 0%;
-  width: 60%;
+  width: 55%;
   z-index: 2;
 }
 
