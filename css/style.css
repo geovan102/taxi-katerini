@@ -362,3 +362,16 @@ img {
     font-size: 0.8rem;
   }
 }
+
+/* ---------- Hero on mobile ---------- */
+@media (max-width: 768px) {
+  .hero {
+    height: 250px;
+    background-position: center 35%;
+  }
+
+  .hero-text {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
