@@ -197,7 +197,25 @@ img {
 }
 
 .card .icon {
-  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px;
+}
+
+.card .icon img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(255, 194, 14, 0.25));
+}
+
+.card:hover .icon img {
+  transform: scale(1.12);
 }
 
 .card h3 {
@@ -225,11 +243,13 @@ img {
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 24px;
-  padding-top: 16px;
-  border-top: 2px solid var(--yellow);
+  padding-top: 0;
 }
 
 .phone-number {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 1.4rem;
   font-weight: bold;
   color: white;
@@ -237,9 +257,16 @@ img {
   white-space: nowrap;
 }
 
+.phone-number img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  flex-shrink: 0;
+}
+
 .chat-icon {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -248,17 +275,13 @@ img {
 }
 
 .chat-icon img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   filter: brightness(0) invert(1);
 }
 
 .whatsapp {
   background-color: #25D366;
-}
-
-.viber {
-  background-color: #7360F2;
 }
 
 /* ---------- Footer ---------- */
@@ -277,4 +300,5 @@ img {
   margin: 0;
   font-size: 0.8rem;
   color: #999;
+  white-space: nowrap;
 }
