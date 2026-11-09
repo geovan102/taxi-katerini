@@ -200,17 +200,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 12px;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10px;
 }
 
 .card .icon img {
-  width: 44px;
-  height: 44px;
+  max-width: 36px;
+  max-height: 36px;
+  width: auto;
+  height: auto;
   object-fit: contain;
   display: block;
-  transition: transform 0.3s ease;
   filter: drop-shadow(0 0 5px rgba(255, 194, 14, 0.25));
 }
 
