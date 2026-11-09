@@ -45,3 +45,26 @@ document.querySelectorAll(".lang-button").forEach((button) => {
 });
 
 setLanguage(getStartLanguage() || DEFAULT_LANG);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const targets = document.querySelectorAll("section, .service-card, .fleet-card, .contact-container");
+
+  targets.forEach(el => el.classList.add("scroll-reveal"));
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  targets.forEach(el => observer.observe(el));
+});
