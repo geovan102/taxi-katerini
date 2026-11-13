@@ -1,37 +1,38 @@
-# 🚖 Taxi Katerini
+# Taxi Katerini
 
 A mobile-friendly website for my taxi service in Katerini, Greece, available in Greek and English.
 
-🔗 **Live site:** https://geovan102.github.io/taxi-katerini/
+🔗 **Live site:** [Taxi Katerini](https://geovan102.github.io/taxi-katerini/)
 
-## 📖 About
+## About
 
-I am a taxi driver in Katerini. I built this website to present my services to Greek and international customers.
+I am a taxi driver in Katerini. I built this website to present my services and make it easier for Greek and international customers to contact me.
 
-## ✨ What it has
+## Features
 
-- A homepage with my services and contact details
-- Greek and English language buttons
-- Call and WhatsApp link
-- A layout made for mobile phones
+- Homepage with services and contact information
+- Greek and English language support
+- Direct phone call and WhatsApp links
+- Mobile-friendly layout
 
-## 🛠️ Technologies
+## Tech Stack
 
 - HTML
 - CSS
 - JavaScript
-- Git and GitHub Pages
+- Git
+- GitHub Pages
 
-## 🚀 How to run it
+## Getting Started
 
-1. Download or clone the project.
-2. Open `index.html` in a browser.
+1. Clone or download the repository.
+2. Open `index.html` in your browser.
 
-## 📝 Still to do
+## Future Improvements
 
-- Add a photo gallery of my car
-- Add a section with popular destinations
+- Add a photo gallery of my car.
+- Add a section with popular destinations.
 
-## 👤 Author
+## Author
 
-Georgios Vanasas
+**Georgios Vanasas**
